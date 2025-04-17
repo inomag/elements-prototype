@@ -1,0 +1,17 @@
+{
+  "name": "fujin-kit",
+  "version": "1.0.0",
+  "description": "Lightweight & Quick UI Library available as Web Components",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "rollup": "^2.79.2",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
