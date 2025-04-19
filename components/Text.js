@@ -27,8 +27,9 @@ class Text extends HTMLElement {
 
         const style = document.createElement('style');
         style.textContent = `
+
       .text {
-       font-size: ${fonts.medium};
+       font-size: ${fonts.m};
        color: ${colors.text};
       }
        .success {
@@ -60,7 +61,7 @@ class Text extends HTMLElement {
         }
 
         .label {
-            font-size: ${fonts.m};
+            font-size: ${fonts.s};
             color: ${colors.label};
         }
 

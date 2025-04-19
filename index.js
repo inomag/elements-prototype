@@ -1,2 +1,16 @@
 import './components/Button.js';
 import './components/Text.js';
+import './components/Avatar.js';
+import './components/BreadCrumb.js';
+import './components/CheckBox.js';
+import './components/CheckBoxGroup.js';
+import './components/Chip.js';
+import './components/Divider.js';
+// import './components/RadioGroup.js';
+import './components/Slider.js';
+import './components/Switch.js';
+import './components/Card.js';
+import './components/Skeleton.js';
+import './components/ImageLoader.js';
+import './components/Carousel.js';
+import './components/Accordion.js';

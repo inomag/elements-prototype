@@ -24,7 +24,11 @@ secondary: '#f8e7ea',
         l: '16px',
         xl: '20px',
         xxl: '24px'
-
+    },
+    borders: {
+        s: '10px',
+        m: '14px',
+        l: '18px'
     }
     
   // Future theme properties (fonts, spacing, etc.) can be added here
