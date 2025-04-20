@@ -67,6 +67,9 @@ class FjCheckbox extends HTMLElement {
           margin: 4px;
           width: 16px;
           height: 16px;
+          border-radius: 0;
+                box-shadow: 2px 2px 0px #ccc;
+
         }
         input:checked {
           accent-color: ${colors.primary};

@@ -1,3 +1,6 @@
+import {theme} from '../theme/index.js';
+
+const {colors} = theme;
 class FJImageLoader extends HTMLElement {
     static get observedAttributes() {
       return ['src', 'alt', 'height', 'width'];
@@ -45,6 +48,8 @@ class FJImageLoader extends HTMLElement {
             display: inline-block;
             width: ${this.width};
             height: ${this.height};
+                  box-shadow: 4px 4px 0px ${colors.primary};
+
           }
   
           .imageLoaderWrapper__image {

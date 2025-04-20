@@ -73,7 +73,6 @@ class FJSwitch extends HTMLElement {
             .switch__inner {
               position: absolute;
               top: 2px;
-              border-radius: 50%;
               background-color: #fff;
               transition: all 0.3s ease;
               height: calc(100% - 4px);
@@ -100,13 +99,11 @@ class FJSwitch extends HTMLElement {
             .switch__medium {
               width: calc((${fonts.xl} * 2) + 4px);
               height: calc((${fonts.xl} + 2px));
-              border-radius: calc((${fonts.xl} + 2px));
             }
       
             .switch__small {
               width: calc(${fonts.m} * 2);
               height: ${fonts.l};
-              border-radius: ${fonts.l};
             }
           </style>
       

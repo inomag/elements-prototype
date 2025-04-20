@@ -1,12 +1,11 @@
 class FJSkeleton extends HTMLElement {
     static get observedAttributes() {
-      return ['rounded', 'rect', 'lines', 'avatar'];
+      return ['rect', 'lines', 'avatar'];
     }
   
     constructor() {
       super();
       this.attachShadow({ mode: 'open' });
-      this.rounded = false;
       this.rect = false;
       this.lines = 3;
       this.avatar = false;
@@ -17,7 +16,6 @@ class FJSkeleton extends HTMLElement {
     }
   
     attributeChangedCallback(name, oldValue, newValue) {
-      if (name === 'rounded') this.rounded = this.hasAttribute('rounded');
       if (name === 'rect') this.rect = this.hasAttribute('rect');
       if (name === 'avatar') this.avatar = this.hasAttribute('avatar');
       if (name === 'lines') this.lines = parseInt(newValue) || 3;
@@ -62,9 +60,6 @@ class FJSkeleton extends HTMLElement {
 
             flex-grow: 1;
             margin: 5px 0;
-          }
-          .rounded {
-            border-radius: 999px;
           }
           .rect .line {
             width: 100%;

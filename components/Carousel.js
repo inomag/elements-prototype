@@ -137,6 +137,8 @@ class FJCarousel extends HTMLElement {
           color: white;
           cursor: pointer;
           padding: 0.5em;
+                box-shadow: 2px 2px 0px #ccc;
+
         }
         .carousel__button.prev { left: 10px; }
         .carousel__button.next { right: 10px; }
@@ -149,10 +151,11 @@ class FJCarousel extends HTMLElement {
           width: 10px;
           height: 10px;
           margin: 0 5px;
-          border-radius: 50%;
-          background: #ccc;
+          background: #aaa;
           cursor: pointer;
           transition: background 0.3s ease;
+                box-shadow: 2px 2px 0px #ccc;
+
         }
         .carousel__activeDot {
           background: ${colors.text};

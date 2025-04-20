@@ -17,7 +17,6 @@ class Button extends HTMLElement {
         const type = this.getAttribute('type') || 'primary';
         const label = this.textContent.trim() || 'Button';
         const size = this.getAttribute('size') || 'medium';
-        const rounded = this.hasAttribute('rounded') || false;
         const disabled = this.hasAttribute('disabled') || false;
         // separate variant will require nested styling
         // const variant = this.getAttribute('variant') || 'default';
@@ -38,22 +37,26 @@ class Button extends HTMLElement {
         white-space: nowrap;
         cursor: pointer;
         border: none;
-        border-radius: 4px;
         padding: 8px 16px;
         transition: all 0.2s ease-in-out;
       }
       .primary {
         background-color: ${colors.primary};
         color: white;
+                              box-shadow: 4px 4px 0px ${colors.secondary};
       }
       .secondary {
         background-color: ${colors.secondary};
         color: ${colors.primary};
+                                      box-shadow: 4px 4px 0px ${colors.primary};
+
       }
       .outlined {
         border: 1px solid ${colors.primary};
         background: white;
         color: ${colors.primary};
+                                              box-shadow: 4px 4px 0px ${colors.primary};
+
       }
       .text {
         background: none;
@@ -63,18 +66,23 @@ class Button extends HTMLElement {
         .success {
          background: ${colors.success};
          color: white;
+                                               box-shadow: 4px 4px 0px #ccc;
+
         }
          .info {
           background: ${colors.info};
           color: white;
+          box-shadow: 4px 4px 0px #ccc;
          }
           .warning {
           background: ${colors.warning};
           color: white;
+          box-shadow: 4px 4px 0px #ccc;
           }
           .error {
           background: ${colors.error};
           color: white;
+          box-shadow: 4px 4px 0px #ccc;
           }
           .small {
             font-size: ${fonts.s};
@@ -84,9 +92,7 @@ class Button extends HTMLElement {
             font-size: ${fonts.l};
             padding: 5px 25px;
             }
-            .rounded {
-            border-radius: 12px;
-            }
+
             .disabled {
              opacity: 0.8;
              cursor: not-allowed;
@@ -100,7 +106,7 @@ class Button extends HTMLElement {
     const btn = document.createElement('button');
         btn.textContent = label;
         btn.disabled = disabled;
-    btn.className = `btn ${type} ${size} ${rounded ? 'rounded' : ''} ${disabled ? 'disabled' : ''}`;
+    btn.className = `btn ${type} ${size} ${disabled ? 'disabled' : ''}`;
 
         btn.addEventListener('click', (e) => {
             if (!disabled) {

@@ -21,31 +21,31 @@ class Card extends HTMLElement {
       .card {
       display: flex;
       flex-direction: column;
+      background: white;
       justify-content: center;
-      border: 1px solid #ccc;
-      border-radius: ${borders.m};
-      box-shadow: 0px 0px 4px #ccc;
+      border: 1px solid #aaa;
+      box-shadow: 4px 4px 0px #ccc;
       padding: 16px;
       transition: 0.3s;
       }
        .success {
         border-color: ${colors.success};
-              box-shadow: 0px 0px 4px ${colors.success};
+              box-shadow: 4px 4px 0px ${colors.success};
 
        }
         .warning {
         border-color: ${colors.warning};
-              box-shadow: 0px 0px 4px ${colors.warning};
+              box-shadow: 4px 4px 0px ${colors.warning};
 
         }
         .info {
         border-color: ${colors.info};
-              box-shadow: 0px 0px 4px ${colors.info};
+              box-shadow: 4px 4px 0px ${colors.info};
 
         }
         .error {
         border-color: ${colors.error};
-              box-shadow: 0px 0px 4px  ${colors.error};
+              box-shadow: 4px 4px 0px  ${colors.error};
 
         }
     `;

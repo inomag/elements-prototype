@@ -54,8 +54,9 @@ class FJAccordion extends HTMLElement {
           }
   
           .collapsible__border {
-            border: 1px solid #ccc;
-            border-radius: ${borders.m};
+            border: 1px solid #aaa;
+                  box-shadow: 4px 4px 0px #ccc;
+
           }
   
           .collapsible__toggle {
@@ -67,7 +68,6 @@ class FJAccordion extends HTMLElement {
             justify-content: space-between;
             align-items: center;
             cursor: pointer;
-            border-radius: ${borders.m};
             padding: 6px 12px;
           }
   

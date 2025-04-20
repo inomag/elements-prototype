@@ -41,8 +41,9 @@ class FjChip extends HTMLElement {
             justify-content: center;
             align-items: center;
             gap: 4px;
-            border-radius: 12px;
             padding: 4px 8px;
+                  box-shadow: 2px 2px 0px #ccc;
+
             width: fit-content;
             background-color: ${bgColor};
             color: ${fontColor};
